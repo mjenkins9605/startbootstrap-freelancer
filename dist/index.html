@@ -1,3 +1,10 @@
+<?php
+if($_POST["message"]) {
+    mail("michael.jenkins.9605@gmail.com", "Form to email message", $_POST["message"], "From: an@email.address");
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -20,7 +27,10 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand" href="#page-top">Jake Cline</a>
+            </div>
+                <!-- <img class="img-logo" src="assets/img/portfolio/Jake/VO_Logo.jpg" alt="..." /> -->
+             </div>
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
@@ -38,9 +48,9 @@
         <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." />
+                <img class="masthead-avatar mb-5" src="assets/img/portfolio/Jake/Headshot.jpg" alt="..." />
                 <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">Start Bootstrap</h1>
+                <h1 class="masthead-heading text-uppercase mb-0">Jake Cline</h1>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -48,7 +58,7 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Graphic Artist - Web Designer - Illustrator</p>
+                <p class="masthead-subheading font-weight-light mb-0">Voice Actor - Biker Scout - Bad @$$</p>
             </div>
         </header>
         <!-- Portfolio Section-->
@@ -70,7 +80,7 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/cabin.png" alt="..." />
+                            <img class="img-fluid" src="assets/img/portfolio/new_logo.png" alt="..." />
                         </div>
                     </div>
                     <!-- Portfolio Item 2-->
@@ -79,7 +89,7 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/cake.png" alt="..." />
+                            <img class="img-fluid" src="assets/img/portfolio/new_logo.png" alt="..." />
                         </div>
                     </div>
                     <!-- Portfolio Item 3-->
@@ -88,36 +98,36 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/circus.png" alt="..." />
+                            <img class="img-fluid" src="assets/img/portfolio/new_logo.png" alt="..." />
                         </div>
                     </div>
                     <!-- Portfolio Item 4-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                    <!-- <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio/game.png" alt="..." />
                         </div>
-                    </div>
+                    </div> -->
                     <!-- Portfolio Item 5-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                    <!-- <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio/safe.png" alt="..." />
                         </div>
-                    </div>
+                    </div> -->
                     <!-- Portfolio Item 6-->
-                    <div class="col-md-6 col-lg-4">
+                    <!-- <div class="col-md-6 col-lg-4">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio/submarine.png" alt="..." />
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -158,6 +168,20 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Contact Section Form-->
+
+
+
+
+                <form method="post" action="contact.php">
+                    <textarea name="message"></textarea>
+                    <input type="submit">
+                </form>
+
+                
+
+
+
+                    
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-xl-7">
                         <!-- * * * * * * * * * * * * * * *-->
@@ -225,9 +249,9 @@
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4">Location</h4>
                         <p class="lead mb-0">
-                            2215 John Daniel Drive
-                            <br />
-                            Clark, MO 65243
+                            <!-- 2215 John Daniel Drive
+                            <br /> -->
+                            Pleasant Grove, UT 84062
                         </p>
                     </div>
                     <!-- Footer Social Icons-->
@@ -252,7 +276,7 @@
         </footer>
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; Your Website 2021</small></div>
+            <div class="container"><small>Copyright &copy; Jake Cline 2021</small></div>
         </div>
         <!-- Portfolio Modals-->
         <!-- Portfolio Modal 1-->
@@ -273,7 +297,11 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="..." />
+                                    <!-- <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="..." /> -->
+                                    <video width="640" height="480" controls>
+                                        <source src="assets/img/portfolio/Jake/Jake.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                      </video>
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                                     <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
@@ -305,7 +333,11 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="..." />
+                                    <!-- <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="..." /> -->
+                                    <video width="640" height="480" controls>
+                                        <source src="assets/img/portfolio/Jake/Portuguese.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                      </video>
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                                     <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
@@ -337,7 +369,11 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="..." />
+                                    <!-- <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="..." /> -->
+                                    <video width="640" height="40" controls>
+                                        <source src="assets/img/portfolio/Jake/2021_Mixdown.mp3" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                      </video>
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                                     <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
